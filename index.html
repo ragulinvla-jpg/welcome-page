@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Добро пожаловать</title>
+  <meta name="description" content="Простая статическая страница, опубликованная через GitHub Pages." />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 48px 40px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .wave {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 12px;
+      transform-origin: 70% 70%;
+      animation: wave 2.2s infinite;
+    }
+
+    @keyframes wave {
+      0%, 60%, 100% { transform: rotate(0deg); }
+      20% { transform: rotate(18deg); }
+      40% { transform: rotate(-8deg); }
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #2d2d44;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #5a5a72;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 13px;
+      color: #9a9ab0;
+    }
+
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="wave" role="img" aria-label="Приветствие">👋</span>
+    <h1>Добро пожаловать!</h1>
+    <p>
+      Это простая статическая страница, созданная и опубликованная
+      через <strong>GitHub Pages</strong>. Лёгкий и быстрый старт
+      в мире веб-разработки.
+    </p>
+    <span class="badge">🚀 Размещено на GitHub Pages</span>
+    <footer>
+      Создано 21 мая 2026 ·
+      <a href="https://github.com/ragulinvla-jpg" target="_blank" rel="noopener">github.com/ragulinvla-jpg</a>
+    </footer>
+  </main>
+</body>
+</html>
